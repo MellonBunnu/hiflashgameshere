@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset='utf8'>
+      <title>Google drice</title>
+      <link rel="icon" type="image/x-icon" href="fake-sandwich-food-manufactured-restaurants-food-displays-47709280 (1).jpg">
+    </head>
+    <body>
+        <div id='ruffle'></div>
+        <script src='https://e9x.github.io/ruffle-example/ruffle.js'></script>
+        <script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('ageofwargame.html', 'ruffle', 900, 450);
+        </script>
+      <p>right click for full screen :)</p>
+    </body>
+</html>
